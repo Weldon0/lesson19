@@ -1,5 +1,6 @@
 $.ajaxPrefilter(function (option) {
-  option.url = 'http://ajax.frontend.itheima.net' + option.url;
+  // option.url = 'http://ajax.frontend.itheima.net' + option.url;
+  option.url = 'http://api-breakingnews-web.itheima.net' + option.url;
 
   // /my开头的接口添加统一的请求头
   if (option.url.includes('/my')) {

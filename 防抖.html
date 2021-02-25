@@ -7,43 +7,14 @@
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="./util.js"></script>
+
 </head>
 
 <body>
   <input type="text" id="input1">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
-  <input type="text" id="input2">
   <script>
     const inputEle = document.querySelector('#input1');
-    // 闭包
-    let set;
-    // let set2;
-    inputEle.addEventListener('input', function () {
-      clearTimeout(set)
-      // console.log('234');
-      // console.log(this.value);
-      set = setTimeout(() => {
-        console.log(this.value);
-      }, 3000)
-
-    })
-
-
-    // const inputEle = document.querySelector('#input2');
-
-    // inputEle.addEventListener('input', function () {
-    //   clearTimeout(set2);
-    //   set2 = setTimeout(() => {
-    //     console.log('set2');
-    //   }, 1000)
-    // })
   </script>
 </body>
 
